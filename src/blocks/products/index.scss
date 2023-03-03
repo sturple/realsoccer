@@ -1,0 +1,17 @@
+.wp-block-realsoccer-products {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        li {
+            padding: 1rem;
+            max-width: 200px;
+            border: 1px solid;
+            margin: 0 1rem 1rem;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+	"name": "realsoccer",
+	"version": "1.0.0",
+	"description": "Real Soccer package file",
+	"author": "govwordpress@gov.bc.ca",
+	"license": "Apache-2.0",
+	"keywords": [
+		"Wordpress",
+		"Block Theme",
+		"BCGov"
+	],
+	"homepage": "https://github.com/sturple/realsoccer#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sturple/realsoccer.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sturple/realsoccer/issues"
+	},
+	"main": "index.js",
+	"devDependencies": {
+		"@wordpress/scripts": "^25.4.0"
+	},
+	"scripts": {
+		"build": "wp-scripts build",
+		"build:production": "npm run format && npm run lint:js && npm run fix:css && npm run lint:css && npm run test:unit && npm run build",
+		"lint:css": "wp-scripts lint-style src/",
+		"fix:css": "wp-scripts lint-style src/ --fix --config @wordpress/stylelint-config/scss",
+		"lint:js": "wp-scripts lint-js src/",
+		"format": "wp-scripts format src/",
+		"lint:md:docs": "wp-scripts lint-md-docs",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"packages-update": "wp-scripts packages-update",
+		"start": "wp-scripts start",
+		"test:e2e": "wp-scripts test-e2e",
+		"test:unit": "wp-scripts test-unit-js --passWithNoTests",
+		"test": "npm run test:unit"
+	},
+	"engines": {
+		"npm": ">=9.0.0 <10.0.0",
+		"node": ">=18.0.0 <19.0.0"
+	},
+	"dependencies": {
+		"@wordpress/icons": "^9.6.0"
+	}
+}

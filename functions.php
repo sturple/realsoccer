@@ -76,6 +76,7 @@
 	include_once( 'include/gdlr-plugin-option.php');
 	include_once( 'include/gdlr-font-controls.php');
 	include_once( 'include/gdlr-social-icon.php');
+	include_once( 'include/gdlr-blocks.php' );
 
 	// create page options
 	include_once( 'include/gdlr-page-options.php');
