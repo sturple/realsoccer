@@ -4,6 +4,17 @@
   "title": "Products",
   "name": "realsoccer/products",
   "category": "realsoccer",
+  "styles": [
+    {
+      "name": "card",
+      "label": "Card Layout",
+      "isDefault": true
+    },
+    {
+      "name": "list",
+      "label": "List Layout"
+    }
+  ],
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./index.css",

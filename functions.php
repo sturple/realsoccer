@@ -69,13 +69,15 @@
 	// register function / filter / action
 	include_once( 'functions-size.php');	
 	include_once( 'include/gdlr-include-script.php');	
-	include_once( 'include/function/gdlr-function-regist.php');	
+	include_once( 'include/function/gdlr-function-regist.php');
+	include_once( 'include/woocommerce.php');
 	
 	// create admin option
 	include_once( 'include/gdlr-admin-option.php');
 	include_once( 'include/gdlr-plugin-option.php');
 	include_once( 'include/gdlr-font-controls.php');
 	include_once( 'include/gdlr-social-icon.php');
+	// Added by sturple
 	include_once( 'include/gdlr-blocks.php' );
 
 	// create page options

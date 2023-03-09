@@ -6,8 +6,9 @@ import { InspectorControls } from '@wordpress/block-editor';
 
 const edit = ( props ) => {
 	const blockProps = useBlockProps();
+    console.log(blockProps.className)
 	return (
-		<div { ...blockProps }>
+		<div {...blockProps} >
 			<InspectorControls>
 				<PanelBody title="Product Categories">
 					<SelectControl
@@ -20,10 +21,17 @@ const edit = ( props ) => {
 					/>
 				</PanelBody>
 			</InspectorControls>
-			<ServerSideRender
-				block="realsoccer/products"
-				attributes={ props.attributes }
-			/>
+        
+                <ServerSideRender 
+                    block="realsoccer/products"
+                    attributes={ 
+                        {
+                            category: props.attributes.category,
+                            className: props.className,
+                        }
+                        
+                    }
+                />
 		</div>
 	);
 };
