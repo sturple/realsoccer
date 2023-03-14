@@ -64,12 +64,13 @@
 	
 	// utility function
 	include_once( 'include/function/gdlr-media.php');
-	include_once( 'include/function/gdlr-utility.php');		
+	include_once( 'include/function/gdlr-utility.php');
 
 	// register function / filter / action
 	include_once( 'functions-size.php');	
 	include_once( 'include/gdlr-include-script.php');	
-	include_once( 'include/function/gdlr-function-regist.php');	
+	include_once( 'include/function/gdlr-function-regist.php');
+	include_once( 'include/woocommerce.php');
 	
 	// create admin option
 	include_once( 'include/gdlr-admin-option.php');
