@@ -5,7 +5,7 @@ add_action( 'tgmpa_register', 'gdlr_register_required_plugins' );
 if( !function_exists('gdlr_register_required_plugins') ){
 	function gdlr_register_required_plugins(){
 		$plugins = array(
-			array(
+			/*array(
 				'name'     				=> 'masterslider',
 				'slug'     				=> 'masterslider', 
 				'source'   				=> GDLR_LOCAL_PATH . '/include/plugin/plugins/masterslider.zip',
@@ -22,7 +22,7 @@ if( !function_exists('gdlr_register_required_plugins') ){
 				'required' 				=> true,
 				'force_activation' 		=> false,
 				'force_deactivation' 	=> false, 
-			),
+			),*/
 			array(
 				'name'     				=> 'Goodlayers Importer',
 				'slug'     				=> 'goodlayers-importer', 
@@ -40,7 +40,7 @@ if( !function_exists('gdlr_register_required_plugins') ){
 				'force_activation' 		=> false,
 				'force_deactivation' 	=> false, 
 			),
-			array(
+			/*array(
 				'name'     				=> 'Goodlayers Portfolio',
 				'slug'     				=> 'gdlr-portfolio', 
 				'version'               => '1.0.0',
@@ -48,9 +48,10 @@ if( !function_exists('gdlr_register_required_plugins') ){
 				'required' 				=> true,
 				'force_activation' 		=> false,
 				'force_deactivation' 	=> false, 
-			),
+			),*/
 			array('name' => 'Contact Form 7', 'slug' => 'contact-form-7', 'required' => true),
-			array('name' => 'Wp Google Maps', 'slug' => 'wp-google-maps', 'required' => false),
+			array('name' => 'Advance Custom Fields', 'slug' => 'advanced-custom-fields', 'required' => true),
+			/*array('name' => 'Wp Google Maps', 'slug' => 'wp-google-maps', 'required' => false),*/
 			array('name' => 'Category Order and Taxonomy Terms Order', 'slug' => 'taxonomy-terms-order', 'required' => true),
 		);
 
