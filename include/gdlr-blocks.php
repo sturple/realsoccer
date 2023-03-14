@@ -28,16 +28,18 @@ function realsoccer_register_patterns() {
 
 add_action( 'init', 'realsoccer_register_blocks' );
 function realsoccer_register_blocks(): void {
-    $path = plugin_dir_path( dirname( __FILE__, 1 ) ) . 'build/blocks';
+    $path       = plugin_dir_path( dirname( __FILE__, 1 ) ) . 'build/blocks';
+    $categories = realsoccer_get_product_categories();
     register_block_type_from_metadata( $path . '/products', [ 
         'render_callback' =>  'realsoccer_products_block_render',
         'attributes'      => [
             'categories'       => [
-                'default' => realsoccer_get_product_categories(),
+                'default' => $categories,
                 'type'    => 'array',
             ],
             'category'         => [
-                'type' => 'string',
+                'type'    => 'string',
+                'default' => $categories[0]['value']
             ],
         ],
     
@@ -82,8 +84,6 @@ function realsoccer_products_block_render( array $attributes ): string {
             "age_group" => is_array( $age_group ) ? implode( ', ', $age_group ): $age_group,
             "start_date" => get_field( 'start_date', $post->ID ),
             "end_date" => get_field( 'end_date', $post->ID ),
-            "start_time" => get_field( 'start_time', $post->ID ),
-            "end_time" => get_field( 'end_time', $post->ID ),
             "price"     => implode( ', ', $price),
             "class_name"     => $class_name
 

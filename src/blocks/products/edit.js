@@ -6,7 +6,6 @@ import { InspectorControls } from '@wordpress/block-editor';
 
 const edit = ( props ) => {
 	const blockProps = useBlockProps();
-    console.log(blockProps.className)
 	return (
 		<div {...blockProps} >
 			<InspectorControls>
