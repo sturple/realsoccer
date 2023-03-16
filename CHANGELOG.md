@@ -1,4 +1,9 @@
-# 2.1.0 Mar 13, 2023
+# Changelog
+
+## 2.2.0 Mar 14, 2023
+* Dynamic product block framework
+
+## 2.1.0 Mar 13, 2023
 * Updated Plugin Requirements
 * Added Gender and Age group taxonomies to product
 * Allowed product content to accept blocks.

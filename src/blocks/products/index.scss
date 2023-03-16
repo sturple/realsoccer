@@ -1,0 +1,59 @@
+.wp-block-realsoccer-products {
+    >h2 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    ul {
+        &.product-listing-block {
+            list-style: none;
+            padding: 0;
+        }
+    }
+    a {
+    
+        &.btn {
+            padding: 1rem 2rem; 
+            border: 1px solid #8a4445;
+            background-color: #aa4243;
+            color: #fff;
+            display:inline-block;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: 1rem 0 0;
+        }
+    }
+
+    &.is-style-card {
+         ul {
+            &.product-listing-block {
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 0;
+
+                >li {
+                    padding: 1rem;
+                    max-width: 250px;
+                    border: 1px solid;
+                    margin: 0 1rem 1rem;
+                }
+            }
+        }
+    }
+    &.is-style-list {
+        ul {
+            &.product-listing-block {
+                > li {
+                    margin-bottom: 2rem;
+                    padding-bottom: 2rem;
+                    border-bottom: 1px solid #aa4243;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}

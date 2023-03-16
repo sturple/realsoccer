@@ -78,6 +78,9 @@
 	include_once( 'include/gdlr-font-controls.php');
 	include_once( 'include/gdlr-social-icon.php');
 
+	// Added by sturple
+	include_once( 'include/gdlr-blocks.php' );
+
 	// create page options
 	include_once( 'include/gdlr-page-options.php');
 	include_once( 'include/gdlr-demo-page.php');
@@ -122,5 +125,16 @@
 	
 	// revision
 	include_once(get_template_directory() . '/gdlr-revision.php');
+
+
+	/**
+	 * Helper error log.
+	 *
+	 * @param [type] $msg
+	 * @return void
+	 */
+	function logger( $msg ) {
+		error_log( print_R( $msg, true ));
+	}
 	
 ?>
